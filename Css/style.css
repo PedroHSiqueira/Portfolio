@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #2d2f31;
+}
+
+/*Header*/
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+header a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+header a:hover{
+  color: green;
+  transition: 400ms ease-in-out;
+}
+
+.cor{color: green}
+
+/*Section Principal*/
+
+#foto{
+  width: 25vw;
+  height: auto;
+  border-radius: 20%;
+  border: 5px solid green;
+  box-shadow: 2px 2px 12px #606060; 
+}
+
+figure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+
+}
+
+.introducao{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+.resumo{
+  font-size: 1.2rem;
+  max-width: 60vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.escrevendo{
+  width: 420px;
+  animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+@keyframes typing{
+  from{width: 0;
+  }
+}
+
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+
+/* Projetos */
+
+.pessoal{
+  margin-top: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.pessoal h2{
+  color: white;
+  text-align: center;
+}
+
+.projetos{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.login img{
+  width: 30vw;
+  height: auto; 
+  border-radius: 20%;
+  box-shadow: 2px 2px 12px #606060; 
+}
+
+.ux{
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.ux img{
+  width: 52vw;
+  height: auto; 
+  border-radius: 5%;
+  box-shadow: 2px 2px 12px #606060; 
+}
+
+@media (max-width: 600px)
+{
+  .cabecalho{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introducao{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projetos{
+    display: flex;
+    flex-direction: column;
+   }
+}
