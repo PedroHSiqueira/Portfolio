@@ -66,11 +66,11 @@ header a:hover {
 }
 
 .escrevendo {
-  width: 430px;
-  animation: escrever 2s steps(30) infinite alternate, piscar .5s step-end infinite alternate;
+  width: 420px;
+  animation: escrever 2.3s steps(33) infinite alternate, piscar .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  border-right: 3px solid #ff7373;
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
 }
