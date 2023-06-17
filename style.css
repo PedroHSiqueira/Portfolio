@@ -67,7 +67,7 @@ header a:hover {
 
 .escrevendo {
   width: 430px;
-  animation: escrever 2.5s steps(28) infinite alternate, piscar .5s step-end infinite alternate;
+  animation: escrever 2s steps(30) infinite alternate, piscar .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
