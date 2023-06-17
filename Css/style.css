@@ -1,65 +1,62 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+::-webkit-scrollbar {
+  display: none;
 }
 
-body{
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
   background-color: #2d2f31;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cor{
+  color: #ff7373;
 }
 
 /*Header*/
 
-header{
+header {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
 }
 
-header a{
+header a {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   margin-right: 1em;
 }
 
-header a:hover{
-  color: green;
+header a:hover {
+  color: #ff7373;
   transition: 400ms ease-in-out;
 }
 
-.cor{color: green}
-
 /*Section Principal*/
 
-#foto{
-  width: 25vw;
-  height: auto;
-  border-radius: 20%;
-  border: 5px solid green;
-  box-shadow: 2px 2px 12px #606060; 
+.nome {
+  font-size: 4rem;
 }
 
-figure{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem;
-
-}
-
-.introducao{
-  margin-top: 5%;
+.introducao {
+  height: 70vh;
+  margin: 2rem 0 18rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,16 +65,9 @@ figure{
   font-size: 2rem;
 }
 
-.resumo{
-  font-size: 1.2rem;
-  max-width: 60vw;
-  font-family: 'Poppins', sans-serif;
-}
-
-.escrevendo{
-  width: 420px;
-  animation: typing 2s steps(30), blink .5s step-end infinite alternate;
-
+.escrevendo {
+  width: 430px;
+  animation: escrever 2.5s steps(28) infinite alternate, piscar .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -85,76 +75,74 @@ figure{
   font-size: 2rem;
 }
 
-@keyframes typing{
-  from{width: 0;
+@keyframes escrever {
+  from {
+    width: 0;
   }
 }
 
-@keyframes blink{
-  50%{
+@keyframes piscar {
+  50% {
     border-color: transparent;
   }
 }
 
-/* Projetos */
+/* Tecnologias */
 
-.pessoal{
-  margin-top: 5%;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+.tecnologia img{
+  width: 3.5vw;
+  height: auto;
+  margin: 0 1rem 0 1rem;
+  cursor: pointer;
 }
 
-.pessoal h2{
-  color: white;
+.tecnologia{
+  background-color: #222324;
+  padding: 1.2rem;
+  margin: 0 20rem 0 20rem;
+  border-radius: 10px;
+}
+
+.linguagens{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* projetos */
+
+.projetos{
+  margin-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.projetos p{
+  margin: 1rem 10rem 0 10rem;
+  max-width: 1450px;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.projetos div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projetos img{
+  width: 70vw;
+  height: auto;
+  border: 10px solid #000000;
+  margin: 2rem 0 2rem 0;
+  cursor: pointer;
+
+}
+
+.projetos h2{
+  color: #ffffff;
   text-align: center;
 }
 
-.projetos{
+.botoes{
   display: flex;
-  justify-content: space-between;
-  padding: 5%;
-}
-
-.login{
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-}
-
-.login img{
-  width: 30vw;
-  height: auto; 
-  border-radius: 20%;
-  box-shadow: 2px 2px 12px #606060; 
-}
-
-.ux{
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-}
-
-.ux img{
-  width: 52vw;
-  height: auto; 
-  border-radius: 5%;
-  box-shadow: 2px 2px 12px #606060; 
-}
-
-@media (max-width: 600px)
-{
-  .cabecalho{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .introducao{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .projetos{
-    display: flex;
-    flex-direction: column;
-   }
 }

@@ -2,62 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Saira:wght@500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/Css/style.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/Css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
   <title>Portfólio</title>
 </head>
 
 <body>
   <!-- Header -->
   <header class="cabecalho">
-    <p class="logo">Porti<span class="cor">folio</span></p>
+    <a href="#"><span class="cor">P.</span>Siqueira</a>
 
     <nav>
-      <a href="#">Home</a>
-      <a href="#pessoal">Projetos</a>
-      <a href="#">Cursos</a>
+      <a href="#home">Home</a>
+      <a href="#tecnologia">Tecnologias</a>
+      <a href="#projetos">Projetos</a>
       <a href="#">Contato</a>
     </nav>
   </header>
 
   <!-- Section Principal  -->
-  <section class="introducao">
-    <figure>
-      <img src="/img/profile-pic.png" alt="Foto Principal" id="foto">
-    </figure>
-
+  <section class="introducao" id="home">
     <article>
-      <h1 class="escrevendo">Me chamo Pedro Siqueira</h1>
-      <p class="resumo">HTML | CSS | Javascript</p>
-      <p class="resumo">Sou um estudante altamente motivado em desenvolver uma carreira bem-sucedida na área de
-        Tecnologia, Possuo
-        habilidades sólidas em HTML e CSS, adquiridas por meio de experiências acadêmicas e projetos pessoais.</p>
+      <h1 class="nome">Olá, Sou Pedro <span class="cor">Siqueira</span> ...</h1>
+      <p class="escrevendo">Desenvolvedor Front-End</p>
     </article>
+  </section>
+
+  <!-- Tecnologias -->
+
+  <section class="tecnologia" id="tecnologia">
+    <div class="linguagens">
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+      </figure>
+
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+      </figure>
+
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+      </figure>
+
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+      </figure>
+
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+      </figure>
+
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+      </figure>
+
+      <figure>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+      </figure>
+    </div>
   </section>
 
   <!-- Projetos -->
 
-  <section class="pessoal" id="pessoal">
-    <h2>Projetos pessoais</h2>
-    <div class="projetos">
-      <figure class="login">
-        <h3>Página de Cadastro</h3>
-        <img src="/img/Pagina de Login.png" alt="Cadastro">
-      </figure>
-  
-      <figure class="ux">
-        <h3 class="ux">Curso de UX</h3>
-        <img src="/img/curso.png" alt="Curso UX">
-      </figure>
-    </section>
-    </div>
+  <section class="projetos" id="projetos">
 
+    <h2>Projetos</h2>
+
+    <div>
+      <a href="https://pedrohsiqueira.github.io/controle-de-chamados/" target="_blank"><img src="img/controle-chamadas.png" alt="controle de chamados"></a>
+
+      <p>Esse sistema pode ser útil para gerenciar solicitações de suporte, atendimento ao cliente ou tarefas internas em uma equipe. A estrutura básica do HTML consiste em uma tabela para exibir as informações dos chamados e elementos de formulário para adicionar novos chamados, já o CSS é responsável por estilizar o controle de chamados, definindo propriedades como fonte, margens e alinhamentos</p>
+
+    </div>
+  </section>
 </body>
 
 </html>
