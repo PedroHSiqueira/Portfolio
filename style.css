@@ -21,11 +21,6 @@ body {
   color: #ff7373;
 }
 
-hr{
-  background-color: #000000;
-  padding: 1px;
-  border: none;
-}
 
 /*Header*/
 
@@ -153,4 +148,10 @@ header a:hover {
 
 .projetos h4{
   font-size: 1.5rem;
+}
+
+.projetos hr{
+  background-color: #000000;
+  padding: 1px;
+  border: none;
 }
