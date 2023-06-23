@@ -90,6 +90,13 @@ header a:hover {
 
 /* Tecnologias */
 
+.tecnologia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .tecnologia img{
   width: 3.5vw;
   height: auto;
@@ -97,16 +104,13 @@ header a:hover {
   cursor: pointer;
 }
 
-.tecnologia{
+.linguagens{
   background-color: #222324;
   padding: 1.2rem;
-  margin: 0 20rem 0 20rem;
-  border-radius: 10px;
-}
-
-.linguagens{
-  display: flex;
-  justify-content: space-around;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3rem;
 }
 
 /* projetos */
@@ -114,6 +118,9 @@ header a:hover {
 .projetos{
   margin-top: 10rem;
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projetos p{
@@ -154,4 +161,8 @@ header a:hover {
   background-color: #000000;
   padding: 1px;
   border: none;
+}
+
+.controle-chamados, .calculadora-imc{
+  max-width: 1370px;
 }
