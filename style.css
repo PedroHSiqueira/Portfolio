@@ -1,3 +1,10 @@
+:root{
+  --bg-color: #2d2f31;
+  --bg-second-color: #222324;
+  --text-color: #ffffff;
+  --text-second-color: #ff7373;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,22 +16,25 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
   overflow-x: hidden;
 }
 
 body {
-  background-color: #2d2f31;
+  background-color: var(--bg-color);
   font-family: 'Poppins', sans-serif;
 }
 
 .cor{
-  color: #ff7373;
+  color: var(--text-second-color);
 }
 
 
 /*Header*/
 
+
 header {
+  background-color: var(--bg-second-color);
   position: sticky;
   top: 0;
   display: flex;
@@ -33,20 +43,21 @@ header {
   padding: 2rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
+  box-shadow: 2px 2px 20px var(--bg-second-color);
 }
 
 header a {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
   text-decoration: none;
   margin-right: 1em;
 }
 
 header a:hover {
-  color: #ff7373;
-  transition: 400ms ease-in-out;
+  color: var(--text-second-color);
+  transition: 200ms ease-in-out;
 }
 
 /*Section Principal*/
@@ -61,7 +72,7 @@ header a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--text-color);
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
 }
@@ -71,7 +82,7 @@ header a:hover {
   animation: escrever 2.3s steps(33) infinite alternate, piscar .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #ff7373;
+  border-right: 3px solid var(--text-second-color);
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
 }
@@ -88,6 +99,20 @@ header a:hover {
   }
 }
 
+@media screen and (max-width: 870px) {
+  .nome{
+    font-size: 3rem;
+  }
+  .escrevendo{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .nome{
+    font-size: 2rem;
+  }
+}
+
 /* Tecnologias */
 
 .tecnologia{
@@ -98,19 +123,25 @@ header a:hover {
 }
 
 .tecnologia img{
-  width: 3.5vw;
+  width: 50px;
   height: auto;
   margin: 0 1rem 0 1rem;
   cursor: pointer;
 }
 
 .linguagens{
-  background-color: #222324;
+  background-color: var(--bg-second-color);
   padding: 1.2rem;
   border-radius: 20px;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 3rem;
+}
+
+@media screen and (max-width: 800px){
+  .linguagens{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* projetos */
@@ -126,11 +157,11 @@ header a:hover {
 .projetos p{
   margin: 1rem 10rem 2rem 10rem;
   max-width: 1450px;
-  color: #ffffff;
-  font-size: 1.2rem;
+  color: var(--text-color);
+  font-size: 1rem;
 }
 
-.projetos div{
+.projetos article{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,30 +170,25 @@ header a:hover {
 }
 
 .projetos img{
-  width: 70vw;
+  width: 65vw;
   height: auto;
-  border: 10px solid #000000;
+  border: 10px solid var(--bg-second-color);
+  border-radius: 5px;
   margin: 2rem 0 2rem 0;
   cursor: pointer;
 
 }
 
 .projetos h2, h4{
-  color: #ffffff;
+  color: var(--text-color);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .projetos h4{
   font-size: 1.5rem;
 }
 
-.projetos hr{
-  background-color: #000000;
-  padding: 1px;
-  border: none;
-}
-
-.controle-chamados, .calculadora-imc{
+.projetos-pessoais{
   max-width: 1370px;
 }
