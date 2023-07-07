@@ -41,7 +41,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--text-color);
   box-shadow: 2px 2px 20px var(--bg-second-color);
@@ -58,6 +58,12 @@ header a {
 header a:hover {
   color: var(--text-second-color);
   transition: 200ms ease-in-out;
+}
+
+@media (min-width: 450px){
+  header{
+    font-size: 1rem;
+  }
 }
 
 /*Section Principal*/
@@ -99,7 +105,7 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 870px) {
+@media (max-width: 870px) {
   .nome{
     font-size: 3rem;
   }
@@ -107,9 +113,19 @@ header a:hover {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 670px) {
+@media (max-width: 670px) {
   .nome{
     font-size: 2rem;
+  }
+
+  .escrevendo{
+    width: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nome{
+    font-size: 1.5rem;
   }
 }
 
@@ -138,9 +154,15 @@ header a:hover {
   gap: 3rem;
 }
 
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
   .linguagens{
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 400px){
+  .linguagens{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -156,7 +178,6 @@ header a:hover {
 
 .projetos p{
   margin: 1rem 10rem 2rem 10rem;
-  max-width: 1450px;
   color: var(--text-color);
   font-size: 1rem;
 }
@@ -191,4 +212,22 @@ header a:hover {
 
 .projetos-pessoais{
   max-width: 1370px;
+}
+
+@media (max-width: 800px){
+  .projetos h2, h4{
+    font-size: 1.5rem;
+  }
+
+  .projetos p{
+    font-size: 0.7rem;
+      margin: 0.5rem 2.5rem 1rem 2.5rem;
+    }
+  }
+
+
+@media (max-width: 500px){
+  .projetos h2, h4{
+    font-size: 1.2rem;
+  }
 }
