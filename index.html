@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Saira:wght@500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link rel="shortcut icon" href="img/1_icone.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/1_icone.png" type="image/x-icon">
   <title>Portfólio</title>
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="cabecalho">
+  <header class="header">
     <a href="#"><span class="cor">P.</span>Siqueira</a>
-
     <nav>
       <a href="#home">Home</a>
       <a href="#tecnologia">Tecnologias</a>
@@ -27,58 +21,68 @@
     </nav>
   </header>
 
-  <!-- Section Principal  -->
-  <section class="introducao" id="home">
-    <main>
-      <h1 class="nome">Olá, Sou Pedro <span class="cor">Siqueira</span> ...</h1>
-      <p class="escrevendo">Desenvolvedor Front-End</p>
-    </main>
-  </section>
+  <main>
+    <section class="home" id="home">
+      <h1 class="name">Olá, Sou Pedro <span class="cor">Siqueira</span> ...</h1>
+      <p class="typing">Desenvolvedor Front - End</p>
 
-  <!-- Tecnologias -->
+      <div class="buttons">
+        <button class="github">Github</button>
+        <button class="linkedin">Linkedin</button>
+      </div>
+    </section>
 
-  <section class="tecnologia" id="tecnologia">
-    <div class="linguagens">
-      <figure>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-      </figure>
+    <section class="tecnologia" id="tecnologia">
+      <div class="linguagens">
+        <img src="./assets/img/html5-original.svg" />
+        <h2 class="tecnology-name">HTML5</h2>
+      </div>
 
-      <figure>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-      </figure>
+      <div class="linguagens">
+        <img src="./assets/img/css3-original.svg" />
+        <h2 class="tecnology-name">CSS3</h2>
+      </div>
 
-      <figure>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-      </figure>
+      <div class="linguagens">
+        <img src="./assets/img/javascript-plain.svg" />
+        <h2 class="tecnology-name">Javascript</h2>
+      </div>
 
-      <figure>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-      </figure>
+      <div class="linguagens">
+        <img src="./assets/img/typescript-plain.svg" />
+        <h2 class="tecnology-name">Typescript</h2>
+      </div>
 
-      <figure>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-      </figure>
+      <div class="linguagens">
+        <img src="./assets/img/react-original.svg" />
+        <h2 class="tecnology-name">React.Js</h2>
+      </div>
 
-      <figure>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-      </figure>
-    </div>
-  </section>
+      <div class="linguagens">
+        <img src="./assets/img/nodejs-original.svg" />
+        <h2 class="tecnology-name">Node.Js</h2>
+      </div>
 
-  <!-- Projetos -->
+    </section>
 
-  <section class="projetos" id="projetos">
+    <section class="projetos" id="projetos">
+      <h2>Projetos</h2>
+      <article class="projetos-pessoais">
+        <a href="https://pedrohsiqueira.github.io/Help-Desk/" target="_blank"><img
+            src="./assets/img/3_controle-chamadas.png" alt="controle de chamados"></a>
 
-    <h2>Projetos</h2>
 
-    <article class="projetos-pessoais">
-      <a href="https://pedrohsiqueira.github.io/Help-Desk/" target="_blank"><img src="img/3_controle-chamadas.png" alt="controle de chamados"></a>
-      
+        <h4>Controle de Chamados</h4>
 
-      <h4>Controle de Chamdos</h4>
+        <p>Esse sistema pode ser útil para gerenciar solicitações de suporte, atendimento ao cliente ou tarefas internas
+          em uma equipe. A estrutura básica do HTML consiste em uma tabela para exibir as informações dos chamados e
+          elementos de formulário para adicionar novos chamados, já o CSS é responsável por estilizar o controle de
+          chamados, definindo propriedades como fonte, margens e alinhamentos</p>
+      </article>
 
-      <p>Esse sistema pode ser útil para gerenciar solicitações de suporte, atendimento ao cliente ou tarefas internas em uma equipe. A estrutura básica do HTML consiste em uma tabela para exibir as informações dos chamados e elementos de formulário para adicionar novos chamados, já o CSS é responsável por estilizar o controle de chamados, definindo propriedades como fonte, margens e alinhamentos</p>
-    </article>
+    </section>
+  </main>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
