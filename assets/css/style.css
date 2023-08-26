@@ -31,6 +31,12 @@ body {
   color: var(--text-second-color);
 }
 
+.titulo{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.7rem;
+}
+
 
 /*Header*/
 
@@ -52,6 +58,7 @@ header a {
   color: var(--text-color);
   text-decoration: none;
   padding-right: 1.2em;
+  font-size: 1.2rem;
 }
 
 header a:hover {
@@ -67,13 +74,14 @@ header a:hover {
 
 /*Section Principal*/
 
+
 .name {
   font-size: 4rem;
 }
 
 .home {
   height: 70vh;
-  margin: 2rem 0 18rem 0;
+  margin: 2rem 0 10rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +113,22 @@ header a:hover {
   scale: 1.03;
 }
 
+.about{
+  background-color: var(--bg-second-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20vw 10rem 20vw;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px #000000;
+}
+
+.text{
+  font-size: 1.5rem;
+}
+
 .typing{
   animation: blink 1s infinite;
 
@@ -127,6 +151,14 @@ header a:hover {
 @media (max-width: 870px) {
   .name{
     font-size: 3rem;
+  }
+
+  .titulo{
+    font-size: 1.5rem;
+  }
+
+  .text{
+    font-size: 1rem;
   }
 
   .typing{
@@ -228,7 +260,7 @@ header a:hover {
 .projetos h2, h4{
   color: var(--text-color);
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
 }
 
 .projetos h4{
