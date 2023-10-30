@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat'
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.cor {
+  color: var(--text-second-color);
+}
+
+.titulo {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.7rem;
+}
+
